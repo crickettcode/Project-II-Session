@@ -3,6 +3,50 @@ const Schema = mongoose.Schema
 
 mongoose.Promise = global.Promise
 
+
+
+const UserSchema = new Schema(
+    {
+        username: {
+            type: String
+        },
+
+        email: {
+            type: String
+        },
+        firstName: {
+            type:String
+        },
+        lastName: {
+            type: String
+        },
+        photoUrl: {
+            type: String,
+            default:'https://i.imgur.com/ayxMbRa.png'
+        },
+        mode: {
+            type: String
+        }
+    },
+    {
+        timestamps:{}
+    }
+)
+
+const CommentsSchema = new Schema (
+    {
+        title: {
+            type: String
+        },
+        content: {
+            type: String
+        }
+    },
+    {
+        timestamps:{}
+
+    }
+)
 const ParkSchema = new Schema(
     {
         name: {
@@ -27,54 +71,11 @@ photoUrl: {
 level: {
     type:String 
 },
+users: [UserSchema],
+comments:[CommentsSchema]
+    },
 {
     timestamps:{}
-    }
-)
-
-const UserSchema = new Schema(
-    {
-        username: {
-            type: String
-        },
-
-        email: {
-            type: String
-        },
-        firstName: {
-            type:String
-        },
-        lastName: {
-            type: String
-        },
-        photoUrl: {
-            type: String,
-            default:'https://i.imgur.com/ayxMbRa.png'
-        },
-        mode: {
-            type: String
-
-        },
-         usersInPark: [ParkSchema]
-    },
-    {
-        timestamps:{}
-    }
-)
-
-const CommentsSchema = new Schema (
-    {
-        title: {
-            type: String
-        },
-        content: {
-            type: String
-        },
-commentsInPark: [ParkSchema]
-    },
-    {
-        timestamps:{},
-
     }
 )
 
