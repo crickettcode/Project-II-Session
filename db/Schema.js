@@ -15,25 +15,25 @@ const UserSchema = new Schema(
             type: String
         },
         firstName: {
-            type:String
+            type: String
         },
         lastName: {
             type: String
         },
         photoUrl: {
             type: String,
-            default:'https://i.imgur.com/ayxMbRa.png'
+            default: 'https://i.imgur.com/ayxMbRa.png'
         },
         mode: {
             type: String
         }
     },
     {
-        timestamps:{}
+        timestamps: {}
     }
 )
 
-const CommentsSchema = new Schema (
+const CommentSchema = new Schema(
     {
         title: {
             type: String
@@ -43,7 +43,7 @@ const CommentsSchema = new Schema (
         }
     },
     {
-        timestamps:{}
+        timestamps: {}
 
     }
 )
@@ -52,35 +52,35 @@ const ParkSchema = new Schema(
         name: {
             type: String
         },
-    street: {
-        type: Number
+        street: {
+            type: Number
+        },
+        city: {
+            type: String
+        },
+        zip: {
+            type: Number
+        },
+        hours: {
+            type: Number
+        },
+        photoUrl: {
+            type: String,
+            default: 'https://i.imgur.com/ayxMbRa.png'
+        },
+        level: {
+            type: String
+        },
+        users: [UserSchema],
+        comments: [CommentSchema]
     },
-    city:{
-        type: String 
-    },
-    zip: {
-        type: Number
-    },
-    hours: { 
-        type: Number
-    },
-photoUrl: {
-    type: String,
-    default:'https://i.imgur.com/ayxMbRa.png'
-},
-level: {
-    type:String 
-},
-users: [UserSchema],
-comments:[CommentsSchema]
-    },
-{
-    timestamps:{}
+    {
+        timestamps: {}
     }
 )
 
 module.exports = {
     ParkSchema,
     UserSchema,
-    ContentSchema
+    CommentSchema
 }

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Schema = require('../db/schema')
+const Schema = require('../Schema')
 
 const Park = mongoose.model('Park', Schema.ParkSchema)
 

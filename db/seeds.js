@@ -1,6 +1,23 @@
-const express = require("express");
-const router = express.Router();
+require('dotenv').config()
+const Park = require('./models/Park')
+const User = require('./models/User')
+const Comment = require('./models/Comment')
+
 const mongoose = require("mongoose");
+
+mongoose.connect(process.env.MONGODB_URI)
+
+mongoose.connection.once('open', () => {
+    console.log(`Mongoose has connected to MongoDB`)
+})
+
+mongoose.connection.on('error', (error) => {
+    console.error(`
+    MongoDB connection error!!! 
+    ${error}
+  `)
+    process.exit(-1)
+})
 
 
 Park.remove({}).then(() => {
@@ -30,17 +47,17 @@ Park.remove({}).then(() => {
         level: "beginner",
     })
     const finn = new User({
-        username: "Finnoggn"
-        email: "finnsk8tr@skaterz.com"
-        firstName: "Finn"
-        lastName: "Noggn"
+        username: "Finnoggn",
+        email: "finnsk8tr@skaterz.com",
+        firstName: "Finn",
+        lastName: "Noggn",
         mode: "Skate Board"
     })
     const comment2 = new Comment({
-        title: "Crying"
+        title: "Crying",
         content: "this is too hard"
     })
-    langford.users.push(finnoggn)
+    langford.users.push(finn)
     langford.comments.push(comment2)
 
     return langford.save()
@@ -48,43 +65,31 @@ Park.remove({}).then(() => {
 }).then(() => {
     const brookerun = new Park({
         name: "brookerun",
-        level: "intermediate",
+        level: "intermediate"
     })
     const della = new User({
-        username: "Della"
-        email: "dellacantskate@skaterz.com"
-        firstName: "Del"
-        lastName: "la"
+        username: "Della",
+        email: "dellacantskate@skaterz.com",
+        firstName: "Del",
+        lastName: "la",
         mode: "feets"
     })
     const comment3 = new Comment({
-        title: "Yelling at Me"
+        title: "Yelling at Me",
         content: "the usual"
     })
     brookerun.users.push(della)
     brookerun.comments.push(comment3)
 
     return brookerun.save()
+}).catch((error) => {
+    console.log('!!!!! ERROR SAVING SEEDED DATA !!!!!')
+    console.log(error)
+}).then(() => {
+    mongoose.connection.close()
+    console.log(`
+        Finished seeding database...
+        
+        Disconnected from MongoDB
+      `)
 })
-
-
-    , {
-
-    }, {
-        name: "brooke run",
-        level: "intermediate",
-        img: "http://somelink",
-    }, {
-        name: "Hazard County",
-        level: "all",
-        img: "http://somelink",
-    }
-
-
-    ];
-
-Schema.create(newSchema, function (err) {
-    console.log("SEED: NEW PARKS CREATED");
-    res.redirect('/');
-
-    module.exports = router; 
