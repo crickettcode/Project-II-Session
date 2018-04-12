@@ -6,9 +6,6 @@ const Schema = require("../models/Schema");
 
 router.get('/Schema', function (req, res) {
 
-
-
-
     var newPark = [
 
         {
