@@ -16,6 +16,18 @@ router.get('/', function (req, res) {
     })
 });
 
+router.get('/:parkId', (req, res) => {
+  const parkId = req.params.parkId
+  Park.findById(parkId)
+    .then((park) => {
+      res.render('parks/show', {
+        park
+      })
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+})
 
 
 module.exports = router;

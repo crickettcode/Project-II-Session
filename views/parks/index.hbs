@@ -1,9 +1,7 @@
 <h1>Welcome to Atlanta, Bitch</h1>
 
 {{#each parks}}
-
 <div>
-    Name:{{this.name}} - Street:{{this.street}} - City {{this.city}} - Zip:{{this.zip}} - Hours:{{this.hours}} -level:{{this.level}}
-    {{/each}}
-
+    <a href="/parks/{{this._id}}">{{this.name}}</a>
 </div>
+{{/each}}
