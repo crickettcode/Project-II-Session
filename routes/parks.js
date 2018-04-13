@@ -16,6 +16,10 @@ router.get('/', function (req, res) {
     })
 });
 
+router.get('/new', (req, res) => {
+  res.render('parks/new');
+});
+
 router.get('/:parkId', (req, res) => {
   const parkId = req.params.parkId
   Park.findById(parkId)
@@ -26,6 +30,20 @@ router.get('/:parkId', (req, res) => {
     })
     .catch((error) => {
       console.log(error)
+    })
+})
+
+router.get('/:id/delete', (req, res) => {
+  var parkId = req.params.id;
+  Park.findByIdAndRemove(parkId)
+    .exec(function (error, user) {
+
+      if (error) {
+        console.log("Error while deleting Park with ID of" + parkId);
+        return;
+      }
+      res.redirect('/parks');
+
     })
 })
 
