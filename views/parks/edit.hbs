@@ -1,6 +1,7 @@
-<div>
-    <a href="./parks">Park</a>
-    <a href="./parks/{{park._id}}">This Park</a>/ Modify Park
-</div>
-
-<h2>Modify Park</h2>
+<form action="/parks/{{park._id}}?_method=PUT" method="POST">
+    <div class="form-input">
+        <label for="name">name:</label>
+        <input type="text" name="name" value="{{park.name}}" required/>
+    </div>
+    <input type="submit">
+</form>

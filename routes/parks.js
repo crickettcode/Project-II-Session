@@ -21,9 +21,7 @@ router.get('/new', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-
   var newParkFromForm = req.body;
-
   var park = new Park({
     name: newParkFromForm.name,
 
@@ -39,8 +37,35 @@ router.post('/', (req, res) => {
 
 });
 
+router.get('/:parkId/edit', (req, res) => {
+  const parkId = req.params.parkId
 
+  Park.findById(parkId)
+    .then((park) => {
+      res.render('parks/edit', {
+        park,
+        pageTitle: 'Park_Update'
+      })
+    })
+    .catch((error) => {
+      console.log(error)
 
+    })
+})
+
+router.put('/:parkId', (req, res) => {
+  const parkId = req.params.parkId
+  const updatedParkInfo = req.body
+
+  console.log(updatedParkInfo)
+
+  Park.findByIdAndUpdate(parkId, updatedParkInfo)
+    .then((park) => {
+      console.log(park)
+      res.redirect(`/parks/${parkId}`)
+    })
+
+})
 
 
 router.get('/:parkId', (req, res) => {
