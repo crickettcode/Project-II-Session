@@ -20,6 +20,29 @@ router.get('/new', (req, res) => {
   res.render('parks/new');
 });
 
+router.post('/', (req, res) => {
+
+  var newParkFromForm = req.body;
+
+  var park = new Park({
+    name: newParkFromForm.name,
+
+  });
+
+  park.save(function (err, park) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    res.redirect('/parks');
+  });
+
+});
+
+
+
+
+
 router.get('/:parkId', (req, res) => {
   const parkId = req.params.parkId
   Park.findById(parkId)
@@ -32,6 +55,8 @@ router.get('/:parkId', (req, res) => {
       console.log(error)
     })
 })
+
+
 
 router.get('/:id/delete', (req, res) => {
   var parkId = req.params.id;
