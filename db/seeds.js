@@ -73,8 +73,13 @@ Park.remove({}).then(() => {
 
 }).then(() => {
     const brookerun = new Park({
-        name: "brookerun",
-        level: "intermediate"
+        name: "Brookerun",
+        street: "4770 N Peachtree Rd,",
+        city: "Dunwoody",
+        zip: 30338,
+        hours: "seven AM to ten PM ",
+        level: "intermediate",
+        photoUrl: "https://i.imgur.com/Vm46iNC.jpg",
     })
     const della = new User({
         username: "Della",
