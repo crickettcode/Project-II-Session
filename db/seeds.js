@@ -47,8 +47,13 @@ Park.remove({}).then(() => {
     return o4w.save()
 }).then(() => {
     const langford = new Park({
-        name: "a.langford",
+        name: "A.langford",
+        street: "1614 Arthur Langford Jr Pl, SW,",
+        city: "Atlanta",
+        zip: 30315,
+        hours: "N/A",
         level: "beginner",
+        photoUrl: "https://i.imgur.com/s9GgVdk.jpg",
     })
     const finn = new User({
         username: "Finnoggn",
