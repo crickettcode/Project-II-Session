@@ -24,7 +24,7 @@ Park.remove({}).then(() => {
     const o4w = new Park({
         name: "old fourth",
         level: "advanced",
-        photoUrl: "http://somelink",
+        photoUrl: "https://i.imgur.com/xp174H2.jpg",
     })
     const crickett = new User({
         username: "Crickett",
