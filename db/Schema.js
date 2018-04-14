@@ -53,7 +53,7 @@ const ParkSchema = new Schema(
             type: String
         },
         street: {
-            type: Number
+            type: String
         },
         city: {
             type: String
@@ -62,7 +62,7 @@ const ParkSchema = new Schema(
             type: Number
         },
         hours: {
-            type: Number
+            type: String
         },
         photoUrl: {
             type: String,

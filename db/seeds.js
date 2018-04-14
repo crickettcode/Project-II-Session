@@ -23,6 +23,10 @@ mongoose.connection.on('error', (error) => {
 Park.remove({}).then(() => {
     const o4w = new Park({
         name: "old fourth",
+        street: "830 Willoughby Way",
+        city: "Atlanta",
+        zip: 30312,
+        hours: "six AM until eleven PM",
         level: "advanced",
         photoUrl: "https://i.imgur.com/xp174H2.jpg",
     })
