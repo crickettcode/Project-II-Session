@@ -1,10 +1,10 @@
 
 
 body {
-
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: red;
+ margin:0;
+ height:100%;
 }
 
 a {
@@ -12,7 +12,8 @@ a {
 }
 
 #bitches {
-  background-color: dodgerblue;
-  font-family: 'Courier New', Courier, monospace
-}
+font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: space-around;
+  }
 

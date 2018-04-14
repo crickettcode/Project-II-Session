@@ -62,7 +62,7 @@ router.put('/:parkId', (req, res) => {
   Park.findByIdAndUpdate(parkId, updatedParkInfo)
     .then((park) => {
       console.log(park)
-      res.redirect(`/parks/${parkId}`)
+      res.redirect(`/parks`)
     })
 
 })
