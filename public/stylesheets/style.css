@@ -7,6 +7,14 @@ body {
  height:100%;
 }
 
+#card-one a {
+  color:black;
+}
+
+a.btn-default {
+  color:black;
+}
+
 a {
   color:whitesmoke;
 }

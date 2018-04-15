@@ -1,8 +1,8 @@
 <h1>Welcome to Atlanta, Breh </h1>
 
 {{#each parks}}
-<div id="card one">
-    <div class="card bg-light mb-3" style="max-width: 18rem;">
+<div>
+    <div id="card-one" class=" card text-black bg-light mb-3" style="max-width: 18rem;">
         <div class="card-header"></div>
         <div class="card-body">
             <h5 class="card-title"></h5>
@@ -10,49 +10,49 @@
             <div>
                 <a href="/parks/{{this._id}}">{{this.name}}</a>
             </div>
-            <a href="/parks/new" class="btn btn-primary">Check out Park</a>
+            <a href="/parks/{{this.id}}" class="btn btn-primary{{this.name}}class=" btn btn-primary ">Check out Park</a>
         </div>
     </div>
 
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header"></div>
-        <div class="card-body">
+    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem; ">
+        <div class="card-header "></div>
+        <div class="card-body ">
             <div>
-                <a href="/parks/{{this._id}}/delete">Delete {{this.name}}</a>
+                <a href="/parks/{{this._id}}/delete ">Delete {{this.name}}</a>
             </div>
-            <h5 class="card-title">Delete Park</h5>
-            <p class="card-text"></p>
+            <h5 class="card-title ">Delete Park</h5>
+            <p class="card-text "></p>
         </div>
     </div>
 
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header"></div>
-        <a href="/parks/{{this._id}}/edit">Edit {{this.name}}</a>
-        <div class="card-body">
-            <h5 class="card-title">Update Park</h5>
-            <p class="card-text"></p>
+    <div class="card text-white bg-dark mb-3 " style="max-width: 18rem; ">
+        <div class="card-header "></div>
+        <a href="/parks/{{this._id}}/edit ">Edit {{this.name}}</a>
+        <div class="card-body ">
+            <h5 class="card-title ">Update Park</h5>
+            <p class="card-text "></p>
         </div>
     </div>
 
     {{/each}}
 
-    <div class="card bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header"></div>
-        <div class="card-body">
-            <h5 class="card-title">New Park</h5>
-            <p class="card-text"></p>
-            <a href="/parks/new" class="btn btn-primary">Create</a>
+    <div class="card bg-light mb-3 " style="max-width: 18rem; ">
+        <div class="card-header "></div>
+        <div class="card-body ">
+            <h5 class="card-title ">New Park</h5>
+            <p class="card-text "></p>
+            <a href="/parks/new " class="btn btn-default ">Create</a>
         </div>
     </div>
 
     <!--<div>
-    <a href="/parks/new">
+    <a href="/parks/new ">
         Create
     </a>
 </div>
 <div>
-    <a href="/parks/{{this._id}}/edit">Edit {{this.name}}</a>
+    <a href="/parks/{{this._id}}/edit ">Edit {{this.name}}</a>
 </div>
 <div>
-    <a href="/parks/{{this._id}}/delete">Delete {{this.name}}</a>
+    <a href="/parks/{{this._id}}/delete ">Delete {{this.name}}</a>
 </div
