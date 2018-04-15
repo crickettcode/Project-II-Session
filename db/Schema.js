@@ -22,7 +22,7 @@ const UserSchema = new Schema(
         },
         photoUrl: {
             type: String,
-            default: 'https://i.imgur.com/ayxMbRa.png'
+            default: ''
         },
         mode: {
             type: String
