@@ -8,12 +8,23 @@ body {
 }
 
 a {
-  color: green;
+  color:whitesmoke;
+}
+
+h1 {
+display:flex;
+justify-content: space-around;
+
 }
 
 #bitches {
 font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: space-around;
+  }
+
+  #enter {
+   display:flex;
+   justify-content:flex-start;
   }
 

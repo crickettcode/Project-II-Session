@@ -82,7 +82,6 @@ router.get('/:parkId', (req, res) => {
 })
 
 
-
 router.get('/:id/delete', (req, res) => {
   var parkId = req.params.id;
   Park.findByIdAndRemove(parkId)
