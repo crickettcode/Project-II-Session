@@ -3,7 +3,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- margin:0;
+ margin:auto;
  height:100%;
 }
 
@@ -22,17 +22,31 @@ a {
 h1 {
 display:flex;
 justify-content: space-around;
+ font-family: 'Montserrat', sans-serif;
+ background:#C0D3C5;
+
 
 }
 
 #bitches {
 font-family: 'Courier New', Courier, monospace;
   display: flex;
-  justify-content: space-around;
+  margin: auto;
   }
 
   #enter {
    display:flex;
-   justify-content:flex-start;
+   flex-direction:row;
+   align-content: space-around;
+
   }
 
+  @media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}
+
+#showfont {
+  font-family: 'Roboto Mono', monospace;
+
+}

@@ -1,15 +1,24 @@
 <html>
 
-<h1>This is the page for {{park.name}}</h1>
-
-<div> Street:{{park.street}}</div>
-<div>
-    City: {{park.city}}</div>
-<div>Zip: {{park.zip}}</div>
-<div> Hours: {{park.hours}} </div>
-<div>level: {{park.level}} </div>
-<div>
-    <img src="{{park.photoUrl}}" alt="">
+<div class="jumbotron">
+    <h1 class="display-3">This is the page for {{park.name}}</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p></p>
+    <p class="lead">
+        <a class="btn btn-secondary btn-lg" href="#" role="button">Comment</a>
+    </p>
+    <div id='showfont'>
+        <div> Street:{{park.street}}</div>
+        <div>
+            City: {{park.city}}</div>
+        <div>Zip: {{park.zip}}</div>
+        <div> Hours: {{park.hours}} </div>
+        <div>level: {{park.level}} </div>
+        <div>
+            <img src="{{park.photoUrl}}" alt="">
+        </div>
+    </div>
 </div>
 
 </html>
