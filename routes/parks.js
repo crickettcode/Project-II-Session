@@ -25,10 +25,10 @@ router.post('/', (req, res) => {
   var park = new Park({
     name: newParkFromForm.name,
     street: newParkFromForm.street,
-    state: newStateFromForm.state,
-    zip: newZipFromForm.zip,
-    level: newLevelFromForm.level,
-    hours: newHoursFromForm.hours,
+    state: newParkFromForm.state,
+    zip: newParkFromForm.zip,
+    level: newParkFromForm.level,
+    hours: newParkFromForm.hours,
   });
 
   park.save(function (err, park) {
