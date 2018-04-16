@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
   var newParkFromForm = req.body;
   var park = new Park({
     name: newParkFromForm.name,
-    street: newStreetFromForm.street,
+    street: newParkFromForm.street,
     state: newStateFromForm.state,
     zip: newZipFromForm.zip,
     level: newLevelFromForm.level,
