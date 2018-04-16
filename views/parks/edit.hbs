@@ -1,19 +1,47 @@
 <form action="/parks/{{park._id}}?_method=PUT" method="POST">
-    <div class="form-input">
+    <div class="form-input" "edit">
+        <br>
         <label for="name">name:</label>
+        <br>
         <input type="text" name="name" value="{{park.name}}" required/>
+        <br>
         <label for="street">street</label>
+        <br>
         <input type="text" street="street" value="{{park.street}}" />
+        <br>
+        <br>
         <label for="city">city</label>
+        <br>
+        <br>
         <input type="text" city="city" value="{{park.city}}" />
+        <br>
+        <br>
         <label for="state">state</label>
+        <br>
+        <br>
         <input type="text" state="state" value="{{park.state}}" />
+        <br>
+        <br>
         <label for="zip">zip</label>
+        <br>
+        <br>
         <input type="text" zip="zip" value="{{park.zip}}" />
+        <br>
+        <br>
         <label for="hours">hours</label>
+        <br>
+        <br>
         <input type="text" hours="hours" value="{{park.hours}}" />
+        <br>
+        <br>
         <label for="level">level</label>
+        <br>
+        <br>
+
         <input type="text" level="level" value="{{park.level}}" />
+        <br>
+        <br>
+
     </div>
     <input type="submit">
 </form>

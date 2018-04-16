@@ -59,3 +59,11 @@ a:visited{color:black;}
   display: flex;
   justify-content: space-around;
 }
+
+.edit {
+  background:#F0FFF0;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  font-family:'Roboto Mono', monospace;
+}

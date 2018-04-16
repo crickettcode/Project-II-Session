@@ -42,7 +42,7 @@ Park.remove({}).then(() => {
         title: 'Come on Morty',
         content: 'Wubba lubba dub dub'
     })
-    o4w.users.push(captain_rick)
+    o4w.users.push(Captain_Rick)
     o4w.comments.push(comment1)
 
     return o4w.save()
