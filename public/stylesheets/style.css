@@ -50,4 +50,12 @@ font-family: 'Courier New', Courier, monospace;
   font-family: 'Roboto Mono', monospace;
 
 }
-a:visited{color:black}
+a:visited{color:black;}
+
+#submitform {
+  font-family:'Roboto Mono',monospace;
+  background: thistle;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+}
