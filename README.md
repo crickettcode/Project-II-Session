@@ -16,7 +16,7 @@ Repository for Project II - WDI15
 
 >Right now the app allows the user to access several parks and provides a photo and information about each one. Each park also has user profiles that can be updated with general information and whether the user is a skater, has a scooter, or rides BMX. This would also be helpful with the flow and vibe of the park at a given time of the day. Each park also has its own section for user comments and park announcements. 
 
-![Image finn!!!!]https://imgur.com/NpuFqQc
+![Image finn!!!!](https://imgur.com/NpuFqQc)
 
 # The technologies I used included:
 
