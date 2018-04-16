@@ -63,11 +63,11 @@ router.put('/:parkId', (req, res) => {
   const parkId = req.params.parkId
   const updatedParkInfo = req.body
 
-  console.log(updatedParkInfo)
+  console.log('Updated park info: ', updatedParkInfo)
 
   Park.findByIdAndUpdate(parkId, updatedParkInfo)
     .then((park) => {
-      console.log(park)
+      // console.log(park)
       res.redirect(`/parks`)
     })
 

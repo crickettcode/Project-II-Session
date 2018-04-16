@@ -60,7 +60,7 @@ a:visited{color:black;}
   justify-content: space-around;
 }
 
-.edit {
+#change {
   background:#F0FFF0;
   margin:auto;
   display:flex;
