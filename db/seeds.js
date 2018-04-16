@@ -30,18 +30,18 @@ Park.remove({}).then(() => {
         level: "advanced",
         photoUrl: "https://i.imgur.com/xp174H2.jpg",
     })
-    const crickett = new User({
-        username: "Crickett",
-        email: 'skater@skatez.com',
-        firstName: 'Cri',
-        lastName: 'Ckett',
+    const Captain_Rick = new User({
+        username: "PickleRick",
+        email: 'ihatethisfamily.com',
+        firstName: 'Captain',
+        lastName: 'Rick',
         mode: "Skate Board Duh"
     })
     const comment1 = new Comment({
-        title: 'Ballin',
-        content: 'The park was rocking today.'
+        title: 'Come on Morty',
+        content: 'Wubba lubba dub dub'
     })
-    o4w.users.push(crickett)
+    o4w.users.push(captain_rick)
     o4w.comments.push(comment1)
 
     return o4w.save()
