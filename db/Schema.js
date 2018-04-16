@@ -58,6 +58,9 @@ const ParkSchema = new Schema(
         city: {
             type: String
         },
+        state: {
+            type: String
+        },
         zip: {
             type: Number
         },

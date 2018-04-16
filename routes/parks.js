@@ -22,6 +22,7 @@ router.get('/new', (req, res) => {
 
 router.post('/', (req, res) => {
   var newParkFromForm = req.body;
+  console.log("NEW PARK INFO", newParkFromForm)
   var park = new Park({
     name: newParkFromForm.name,
     street: newParkFromForm.street,
