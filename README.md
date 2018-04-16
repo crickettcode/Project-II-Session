@@ -16,6 +16,8 @@ Repository for Project II - WDI15
 
 >Right now the app allows the user to access several parks and provides a photo and information about each one. Each park also has user profiles that can be updated with general information and whether the user is a skater, has a scooter, or rides BMX. This would also be helpful with the flow and vibe of the park at a given time of the day. Each park also has its own section for user comments and park announcements. 
 
+![Image finn!!!!]https://imgur.com/NpuFqQc
+
 # The technologies I used included:
 
 * Bootstrap3
@@ -30,6 +32,6 @@ Repository for Project II - WDI15
 
 # My Approach - Unsolved Problems - Takeaways
 
->The approach that I took to this project was to tackle a large project with small steps. I used trello to help me do this and to keep me on task. I find that this method keeps me from becoming overwhelmed, especially early on in the project. As far as my actual application went, I began with my main route and full CRUD and then working my way out to build my other two routes.
->A few of the unsolved problems are my limitations with CSS and continuing to gain a better understanding of routes and the use of Express as a whole. I also would like to become more agile with the entire process of building my applications. 
->My takeaways from Project II were actually that I really enjoyed it, despite the level of difficulty. It further solidified that my decision to pursue web development was the right choice and made me even more excited for what lies ahead on my career path. I really do love the ability to create and continue to become more passionate about development each day. 
+> The approach that I took to this project was to tackle a large project with small steps. I used trello to help me do this and to keep me on task. I find that this method keeps me from becoming overwhelmed, especially early on in the project. As far as my actual application went, I began with my main route and full CRUD and then working my way out to build my other two routes.
+> A few of the unsolved problems are my limitations with CSS and continuing to gain a better understanding of routes and the use of Express as a whole. I also would like to become more agile with the entire process of building my applications. 
+> My takeaways from Project II were actually that **I really enjoyed it, despite the level of difficulty.** It further solidified that my decision to pursue web development was the right choice and made me even more excited for what lies ahead on my career path. I really do love the ability to create and continue to become more passionate about development each day. 
