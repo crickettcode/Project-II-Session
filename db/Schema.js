@@ -66,7 +66,7 @@ const ParkSchema = new Schema(
         },
         photoUrl: {
             type: String,
-            default: 'https://i.imgur.com/ayxMbRa.png'
+            default: ''
         },
         level: {
             type: String
